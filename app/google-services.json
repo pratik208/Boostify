@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "613924208971",
+    "project_id": "boostifyapp-5b6a8",
+    "storage_bucket": "boostifyapp-5b6a8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:613924208971:android:b4e033f1c20c9c73c368ce",
+        "android_client_info": {
+          "package_name": "com.codecrafters.boostifyapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtRxW8Lb5Rhp-aTsNLydYDT3FeQSJ9MdM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
