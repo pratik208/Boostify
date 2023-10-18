@@ -33,7 +33,7 @@
     <color name="black_overlay">#66000000</color>
     <!--Custom Colors-->
     <color name="custom_color_primary">#643AE7</color>
-    <color name="custom_color_secondary">#FF8F00</color>
+    <color name="custom_color_secondary">#DCF44F</color>
     <color name="custom_color_secondary_light">#FFD299</color>
     <color name="custom_color_background">#FFFFFF</color>
     <color name="custom_color_text_primary">#060906</color>

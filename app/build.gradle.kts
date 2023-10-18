@@ -57,5 +57,6 @@ dependencies {
     implementation ("com.google.firebase:firebase-auth:22.1.2") // Use the correct version
     implementation ("com.google.firebase:firebase-database:20.2.2")// Use the correct version
     implementation ("com.google.firebase:firebase-storage:20.2.1")// Use the correct version
+    implementation ("com.airbnb.android:lottie:6.1.0")
 
 }

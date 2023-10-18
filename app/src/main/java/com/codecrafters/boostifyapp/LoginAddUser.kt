@@ -1,7 +1,9 @@
 package com.codecrafters.boostifyapp
 
+import android.Manifest
 import android.app.Activity
 import android.content.Intent
+import android.content.pm.PackageManager
 import android.net.Uri
 import android.os.Bundle
 import android.view.View
@@ -10,6 +12,8 @@ import android.widget.EditText
 import android.widget.ProgressBar
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.app.ActivityCompat
+import androidx.core.content.ContextCompat
 import com.bumptech.glide.Glide
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
@@ -52,10 +56,15 @@ class LoginAddUser : AppCompatActivity() {
         selectPhoto = findViewById(R.id.selectphoto)
 
         selectPhoto.setOnClickListener {
-            // Use an Intent to open the image picker
-            val photoPickerIntent = Intent(Intent.ACTION_PICK)
-            photoPickerIntent.type = "image/*"
-            startActivityForResult(photoPickerIntent, 1)
+            // Request the READ_EXTERNAL_STORAGE permission
+            if (ContextCompat.checkSelfPermission(this, Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
+                ActivityCompat.requestPermissions(this, arrayOf(Manifest.permission.READ_EXTERNAL_STORAGE), 1)
+            } else {
+                // Permission is granted, open the image picker
+                val photoPickerIntent = Intent(Intent.ACTION_PICK)
+                photoPickerIntent.type = "image/*"
+                startActivityForResult(photoPickerIntent, 1)
+            }
         }
 
         val btn_createuser = findViewById<Button>(R.id.btn_createuser)

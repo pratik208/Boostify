@@ -30,9 +30,7 @@
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     app:civ_border_width="4dp"
-                    tools:ignore="MissingClass"
-                    android:layout_gravity="center"
-                    />
+                    android:layout_gravity="center" />
 
                 <Button
                     android:id="@+id/select"
@@ -49,7 +47,6 @@
                     app:layout_constraintTop_toTopOf="parent" />
             </FrameLayout>
 
-
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -64,7 +61,6 @@
                     android:inputType="textPersonName"/>
 
             </com.google.android.material.textfield.TextInputLayout>
-
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
@@ -141,7 +137,6 @@
 
             </com.google.android.material.textfield.TextInputLayout>
 
-
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_createuser"
                 android:layout_width="match_parent"
@@ -164,6 +159,7 @@
                 android:textAllCaps="false"
                 android:text="@string/idTVLogin"
                 android:gravity="center_horizontal" />
+
             <ProgressBar
                 android:id="@+id/progressbar"
                 android:layout_width="40dp"
@@ -171,10 +167,7 @@
                 android:layout_gravity="center"
                 android:indeterminate="true"
                 android:indeterminateDrawable="@drawable/progress_bar"
-                android:visibility="gone"
-                />
+                android:visibility="gone" />
         </LinearLayout>
     </ScrollView>
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
